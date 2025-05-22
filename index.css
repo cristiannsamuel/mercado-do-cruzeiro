@@ -1,0 +1,235 @@
+/* Estilo global */
+body {
+  background-color: rgb(223, 240, 240);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  color: blue;
+}
+
+/* Navegação */
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  padding: 16px;
+  margin: 0;
+  background-color: #fff;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+a {
+  color: rgb(4, 21, 172);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+/* Container geral de jogadores */
+#jogadores-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Bloco individual do jogador */
+.jogador-horizontal {
+  display: flex;
+  align-items: center;
+  background-color: rgb(129, 205, 235);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 90%;
+  max-width: 1000px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Foto do jogador */
+.foto img {
+  width: 160px;  
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Informações do jogador */
+.info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 200px;
+  align-items: center;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 22px;
+  color: navy;
+}
+
+.info p {
+  margin: 2px 0;
+  font-size: 16px;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  width: fit-content;
+  font-size: 14px;
+}
+
+.status.interesse {
+  background-color: yellow;
+  color: rgb(0, 0, 0);
+}
+
+.status.fechado {
+  background-color: green;
+  color: white;
+}
+
+.status.negociando {
+  background-color: rgb(53, 4, 187);
+  color: white;
+}
+
+.status.melou {
+  background-color: rgb(230, 50, 6);
+  color: white;
+}
+
+.status.rumor {
+  background-color: rgb(230, 159, 6);
+  color: white;
+}
+
+.fonte {
+  font-size: 12px;
+  color: #333;
+  margin-top: 6px;
+}
+
+/* Botões de aprovação */
+.aprovacao {
+  text-align: center;
+  padding: 12px;
+  background-color: #e1f1f8;
+  border-radius: 10px;
+  height: fit-content;
+  min-width: 90px;
+}
+
+.aprovacao button {
+  font-size: 22px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.aprovacao p {
+  font-size: 14px;
+  margin-top: 6px;
+  color: black;
+}
+
+/* ---------- Responsividade ---------- */
+
+/* Telas menores que 768px (celulares) */
+@media (max-width: 768px) {
+  .jogador-horizontal {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .foto img {
+    width: 70%;
+  }
+
+  .info h3 {
+    font-size: 20px;
+  }
+
+  .info p {
+    font-size: 14px;
+  }
+
+  .aprovacao {
+    margin-top: 12px;
+  }
+}
+
+/* Telas maiores que 1200px (TVs, desktops grandes) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+
+  a {
+    font-size: 1.2rem;
+  }
+
+  .jogador-horizontal {
+    width: 80%;
+  }
+
+  .foto img {
+    width: 180px;
+  }
+
+  .info h3 {
+    font-size: 26px;
+  }
+
+  .info p {
+    font-size: 18px;
+  }
+
+  .aprovacao p {
+    font-size: 16px;
+  }
+}
+
+.status {
+  margin: 0 auto; /* Centraliza */
+  display: inline-block;
+}
+
+#pesquisa {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 20px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.filtros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.filtros input,
+.filtros select {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
