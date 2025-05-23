@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercado do Cruzeiro</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Cruzeiro Masculino</a></li>
+      <li><a href="cruzeirofeminino.html">Cruzeiro Feminino</a></li>
+      <li><a href="cruzeirovolei.html">Sada Cruzeiro</a></li>
+    </ul>
+  </nav>
+
+  <div class="filtros">
+    <input type="text" id="pesquisa" placeholder="Buscar jogador..." onkeyup="renderizarJogadores()" />
+    <select id="filtroPosicao" onchange="renderizarJogadores()">
+      <option value="">Filtrar por posição</option>
+      <option value="Zagueiro">Zagueiro</option>
+      <option value="Atacante">Atacante</option>
+      <option value="Meio-campo">Meio-campo</option>
+      <option value="Goleiro">Goleiro</option>
+      <option value="Lateral">Lateral</option>
+    </select>
+  </div>
+
+  <main>
+    <div id="jogadores-container"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
