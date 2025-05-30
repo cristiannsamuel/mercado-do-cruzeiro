@@ -1,5 +1,49 @@
 const jogadores = [
   {
+    nome: "Victor Gabriel",
+    posicao: "Zagueiro",
+    origem: "Internacional ➡ Cruzeiro",
+    imagem: "src/imagens/victorgabriel.png",
+    fonte: "@samuelvenancio",
+    link: "https://x.com/samuelvenancio/status/1928451110848659892",
+    status: "Interesse",
+    gostei: 0,
+    naoGostei: 0
+  },
+  {
+    nome: "Matheus Gonçalves",
+    posicao: "Atacante",
+    origem: "Flamengo ➡ Cruzeiro",
+    imagem: "src/imagens/matheusgoncalves.png",
+    fonte: "@samuelvenancio",
+    link: "www.youtube.com/watch?si=dwDq7EbXuwvjPkBT&utm_source=MTQxZ&v=HsFovUQXT4Q&feature=youtu.be",
+    status: "Interesse",
+    gostei: 0,
+    naoGostei: 0
+  },
+  {
+    nome: "Marquinhos",
+    posicao: "Atacante",
+    origem: "Arsenal ➡ Cruzeiro",
+    imagem: "src/imagens/marquinhos.png",
+    fonte: "@centraldatoca",
+    link: "https://www.centraldatoca.com.br/mercado/2025/05/29/marquinhos-convence-jardim-e-cruzeiro-avanca-por-compra-dos-direitos-veja-detalhes/",
+    status: "Negociando",
+    gostei: 0,
+    naoGostei: 0
+  },
+  {
+    nome: "Lautaro Díaz",
+    posicao: "Atacante",
+    origem: "Cruzeiro ➡ Internacional",
+    imagem: "src/imagens/lautarodiaz.png",
+    fonte: "@olucasmaiia",
+    link: "https://x.com/olucasmaiia/status/1927402156144914742",
+    status: "Rumor",
+    gostei: 0,
+    naoGostei: 0
+  },
+  {
     nome: "Douglas Santos",
     posicao: "Lateral",
     origem: "Zenit ➡ Cruzeiro",
