@@ -1,5 +1,16 @@
 const jogadores = [
   {
+    nome: "Marquinhos",
+    posicao: "Atacante",
+    origem: "Arsenal ➡ Cruzeiro",
+    imagem: "src/imagens/marquinhos.png",
+    fonte: "@centraldatoca",
+    link: "https://www.centraldatoca.com.br/mercado/2025/05/31/cruzeiro-acerta-compra-de-marquinhos-que-sera-relacionado-contra-o-palmeiras/",
+    status: "Fechado",
+    gostei: 0,
+    naoGostei: 0
+  },
+  {
     nome: "Victor Gabriel",
     posicao: "Zagueiro",
     origem: "Internacional ➡ Cruzeiro",
